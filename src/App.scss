@@ -1,0 +1,58 @@
+@import "./LoginComponent/login";
+@import "./Dashboard/dashboard";
+@import "./Dashboard/ContactsComponent/contacts";
+@import "./Dashboard/HeaderComponent/header";
+
+@import "./Common/Input/input";
+@import "./Common/Button/button";
+@import "./Common/ErrorComponent/error";
+
+.App {
+  height: 100vh;
+}
+
+.flex-flow-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3030b1;
+  border-radius: 10px;
+  border: 7px solid #00000000;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22227e;
+  border: 7px solid #00000000;
+  background-clip: padding-box;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

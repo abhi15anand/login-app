@@ -1,0 +1,21 @@
+.login-page {
+    @extend .center-items;
+    height: 100%;
+    background-color: #f0f0f0;
+    
+  &_container {
+    @extend .center-items;
+    height: 300px;
+    width: 350px;
+    border: none;
+    box-shadow: 0px 0px 5px 2px #bbc0d2;
+    border-radius: 4px;
+    background-color: #fff;
+
+    &_inner {
+      @extend .flex-flow-column;
+      @extend .center-items;
+      width: 70%;
+    }
+  }
+}

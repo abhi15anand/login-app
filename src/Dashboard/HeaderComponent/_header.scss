@@ -1,0 +1,29 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+    background-color: #3030b1;
+    color: #fff;
+    // flex-basis: 7%;
+
+    &_user-section {
+        display: flex;
+        gap: 10px;
+        margin-left: 40px;
+        align-items: center;
+
+        .user-and-email {
+            @extend .flex-flow-column;
+            gap: 2px;
+
+            &_name {
+                font-size: 14px;
+            }
+
+            &_email {
+                font-size: 10px;
+            }
+        }
+    }
+}
